@@ -1,0 +1,18 @@
+body {
+    background-color: #e6e7ec;
+}
+.mos-header {
+    background-color: #fff;
+    height: 70px;
+}
+.mos-body {
+    background-color: #fff;
+    margin-top: 15px;
+}
+.mos-body-mid {
+    border-left: 1px solid #f5f5f5;
+    padding-left: 40px;
+}
+.mos-body-left {
+    padding: 0px;
+}

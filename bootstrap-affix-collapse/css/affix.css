@@ -1,0 +1,47 @@
+#myScrollspy ul.nav-tabs{
+    width: 180px;
+    margin-top: 100px;
+}
+#myScrollspy ul.nav-tabs li a{
+    margin: 0;
+    padding: 8px 16px;
+    color: #767676;
+    font-size: 15px;
+    font-family: "Microsoft Yahei", 微软雅黑, Arial;
+    border-top-left-radius: 0;
+}
+#myScrollspy ul.nav-tabs li a:hover{
+    color: #0098cd;
+    background: #fff;
+    border: 0px;
+    border-left: 1px solid #0089cd;
+    border-top-left-radius: 0;
+}
+#myScrollspy ul.nav-tabs .nav li a{
+    padding-left: 40px;
+}
+#myScrollspy ul.nav-tabs li.active>a, #myScrollspy ul.nav-tabs li.active>a:hover{
+    font-weight: 700;
+    font-size: 18px;
+    color: #0089cd;
+    border: 0px;
+    border-left: 2px solid #0089cd;
+
+}
+
+#myScrollspy ul.nav-tabs.affix{
+    top: 30px;
+}
+.nav-tabs {
+    border-bottom: 0px;
+}
+
+.affix-top {
+    width:213px;
+}
+.affix{
+    width:213px;
+}
+.affix-bottom {
+    width:213px;
+}

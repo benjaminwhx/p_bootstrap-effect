@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-cn" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+</head>
+<body>
+<h3>模拟测试</h3>
+<hr>
+<ul class="nav nav-tabs" role="tablist" id="tab-list">
+    <li class="active"><a href="#shoudan" role="tab" data-toggle="tab">一、收单</a></li>
+    <li><a href="#monizhifu" role="tab" data-toggle="tab">二、模拟支付</a></li>
+    <li><a href="#p2phuidiao" role="tab" data-toggle="tab">三、点对点回调</a></li>
+    <li><a href="#daihuankuanchaxun" role="tab" data-toggle="tab">四、待还款查询</a></li>
+    <li><a href="#gongju" role="tab" data-toggle="tab">五、工具</a></li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane active" id="shoudan">
+        <br>
+        <h5 id="index-11">
+            <b>1.1、操作步骤：</b>
+        </h5>
+        <p>1.根据场景下拉框，选择自己的明文模拟数据；</p>
+        <p>2.点击生成测试按钮，将左边的明文进行加密加签操作；</p>
+        <p>3.点击收单按钮，如果能正常跳转即完成收单模拟。</p>
+        <br/>
+        <h5 id="index-12">
+            <b>1.2、收单特殊字段详解</b>
+        </h5>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead>
+                <th>字段名</th>
+                <th>变量名</th>
+                <th>类型</th>
+                <th>说明</th>
+                <th>可空</th>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>merchantOrderId</td>
+                    <td>商家订单号</td>
+                    <td>String</td>
+                    <td>商家自己的订单号，不可重复</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>expiredDate</td>
+                    <td>订单失效时间</td>
+                    <td>String</td>
+                    <td>格式化为yyyyMMddHHmmss，这个时间在收单时，根据商家需要，可以自行设置订单的失效时间（例如：失效时间可以设置为订单时间后一天）</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>merchantUserId</td>
+                    <td>用户唯一标识</td>
+                    <td>String</td>
+                    <td>一定要保证商家每个用户该字段的唯一性（重中之重）</td>
+                    <td>N</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <br/>
+        <h5 id="index-13">
+            <b>1.3、试一试</b>
+            <br>
+        </h5>
+    </div>
+
+    <div class="tab-pane" id="monizhifu">
+        <br>
+        <h5 id="index-21"><b>2.1、操作步骤</b></h5>
+        <p>1.将收单的商家订单号merchantOrderId填到输入框中；</p>
+        <p>2.点击模拟支付按钮即可；</p>
+        <p>3.模拟支付是方便测试环境中不用关注支付流程，模拟支付可以完成贷款和生成分期单，最终的逻辑和支付的逻辑一致。</p>
+        <p>4.完成模拟支付之后可以进行点对点操作和查询待还款操作。</p>
+        <br/>
+        <h5 id="index-21"><b>2.2、试一试</b></h5>
+        <div>
+            <div style="float: left;margin-left: 30px">
+                <label class="labelClass">商家订单号：</label></div>
+            <input  style="float: left;margin-left: 30px" type="text" value=""  id="merchantOrderId" />
+            <button style="float: left;margin-left: 30px"  id="mokeUpdateLaon" class="btn btn-danger" type="BUTTON" >模拟支付</button>
+        </div>
+        <div class="div003">
+            <h3 class="h3class">响应:</h3>
+            <pre id="mokcPayResponse" style="width: 100%;height: 50px"></pre>
+        </div>
+    </div>
+
+    <div class="tab-pane" id="p2phuidiao">
+        <br>
+        <h5 id="index-31"><b>3.1、操作步骤</b></h5>
+        <p>1.将收单的商家订单号merchantOrderId和商户号merchantCode填到输入框中；</p>
+        <p>2.点击触发点对点即可；</p>
+        <p>3.每一次触发我们都会调用你们的回调接口，将贷款信息进行回传给商家。</p>
+        <p>4.在触发之后，商家开发人员可以根据日志和数据信息进行联调，给我们返回正确的信息接口。</p>
+        <br/>
+        <h5 id="index-32"><b>3.2、试一试</b></h5>
+    </div>
+
+    <div class="tab-pane" id="daihuankuanchaxun">
+        <br>
+        <h5 id="index-41"><b>4.1、操作步骤</b></h5>
+        <p>1.根据下拉框进行数据准备，然后点击生成测试；</p>
+        <p>2.会将明文转化为密文，在点击查询即可；</p>
+        <p>3.商家可以根据文档中的接口说明，进行接口联调测试。</p>
+        <br/>
+        <h5 id="index-42"><b>4.2、试一试</b></h5>
+    </div>
+
+    <div class="tab-pane" id="gongju">
+        <br>
+        <h5 id="index-51"><b>5.1、加解密工具</b></h5>
+        <br/>
+        <h5 id="index-52"><b>5.2、试一试</b></h5>
+    </div>
+
+</div>
+<script src="../static/js/jquery.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+</body>
+</html>

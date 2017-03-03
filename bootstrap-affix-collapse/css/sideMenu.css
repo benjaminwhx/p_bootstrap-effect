@@ -1,0 +1,39 @@
+.sideMenu .nav-tabs > li {
+    border-top: 0px;
+    border-bottom: 1px solid #e7e7eb;
+    padding: 0px;
+}
+.sideMenu .nav-tabs li a, .sideMenu .nav-tabs li a:hover {
+    border: 0px;
+    margin: 0px;
+    border-radius: 0px;
+    padding-left: 30px;
+    font-family: 'Microsoft Yahei','微软雅黑',Arial !important;
+    color: inherit;
+    font-size: 14px !important;
+}
+.sideMenu .nav-tabs li a:hover {
+    background-color: #f5f6f6;
+}
+.sideMenu .nav-tabs li.active > a, .sideMenu .nav-tabs li.active > a:hover {
+    border: 0px;
+    color: #108ee9;
+}
+.trigger > a {
+    background-color: white;
+    background-repeat: no-repeat!important;
+    background-position: 170px 18px !important;
+    background-size: 8px 5px!important;
+}
+.trigger .nav li > a, .trigger .nav li > a:hover {
+    padding-left: 40px;
+    color: #808080;
+}
+.trigger .nav li .nav li a, .trigger .nav li .nav li a:hover {
+    padding-left: 60px;
+    color: #808080;
+}
+.nav-stacked>li+li {
+    margin-top: 0px;
+    margin-left: 0;
+}
