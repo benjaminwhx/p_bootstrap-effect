@@ -1,3 +1,3 @@
 # bootstrap-tab
 
-<img src="https://github.com/benjaminwhx/bootstrap-affix-collapse-example/blob/master/tab.png">
+<img src="https://github.com/benjaminwhx/bootstrap-effect-example/blob/master/bootstrap-tab/tab.png">
