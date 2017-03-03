@@ -7,4 +7,4 @@ I've implemented almost the same behaviour which is presented on the Bootstrap's
 
 ## Screenshots
 
-<img src="https://github.com/benjaminwhx/bootstrap-affix-collapse-example/blob/master/screenShot.jpg">
+<img src="https://github.com/benjaminwhx/bootstrap-effect-example/blob/master/bootstrap-affix-collapse/screenShot.jpg">
