@@ -8,3 +8,5 @@ I've implemented almost the same behaviour which is presented on the Bootstrap's
 ## Screenshots
 
 <img src="https://github.com/benjaminwhx/bootstrap-effect-example/blob/master/bootstrap-affix-collapse/screenShot.jpg">
+
+参考地址:[bootstrapAffix](https://github.com/thbaymet/bootstrapAffix)
